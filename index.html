@@ -28,9 +28,60 @@
 
       <img src="dice-5.png" alt="Playing dice" class="dice" />
       <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--rules">📜 Rules</button>
       <button class="btn btn--roll">🎲 Roll dice</button>
       <button class="btn btn--hold">📥 Hold</button>
     </main>
+
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h3>The Dice game involves luck and decision-making. The objective of the game is to be the first player to reach 100 points.</h3><br>
+      <p>Here are the rules of the Dice game:<br/>
+        &nbsp;Gameplay:
+        <ol>
+          <li>
+              <ol>
+                  <li>
+                      On your turn, you roll a standard six-sided dice.
+                  </li>
+                  <li>
+                      Each number on the dice corresponds to a specific action:
+                  </li>
+                  <li>If you roll a 1, you score no points for the turn, and your turn ends. It&apos;s the next player&apos;s turn.
+                  </li>
+                  <li>
+                      If you roll a 2 to 6, you add that number of points to your turn score and choose whether to roll again (risking your accumulated turn score) or hold.
+                  </li>
+                  <li>
+                      If you decide to roll again: Repeat the above steps, accumulating points for each roll of 2 to 6.
+                      If you roll a 1, your turn score is reset to zero, and your turn ends. It&apos;s the next player&apos;s turn.
+                  </li>
+                  <li>
+                      If you decide to hold: You add your turn score to your total score, and your turn ends.It&apos;s the next player&apos;s turn.
+                  </li>
+              </ol><br>
+              Scoring:
+              <ol>
+                  <li>
+                      Players accumulate points during their turn by rolling 2 to 6 on the dice. These points are added to their turn score.
+                  </li>
+                  <li>
+                      If a player rolls a 1, they score no points for that turn, and their turn score is reset to zero.
+                  </li>
+                  <li>
+                      The turn score is only added to the total score when the player decides to hold.
+                  </li>
+                  <li>
+                      The first player to reach or exceed the target score (100) wins the game.
+                  </li>
+              </ol><br>
+              
+              The Dice game is a fun and straightforward game that can be played by people of all ages. The strategy lies in finding the right balance between risk and reward to accumulate the most points without risking losing them all.<br>
+          </li>
+      </ol>
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
     <script src="script.js"></script>
   </body>
 </html>
