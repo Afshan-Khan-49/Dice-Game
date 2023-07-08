@@ -66,7 +66,6 @@ btnRoll.addEventListener('click', function () {
   if (playing) {
     // Generate random number between 1 to 6
     const dice = Math.trunc(Math.random() * 6) + 1;
-    console.log(dice);
     // Display dice value
     diceEl.classList.remove('hidden');
     diceEl.src = `dice-${dice}.png`;
